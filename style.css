@@ -1,0 +1,196 @@
+:root {
+    --color-background:#383240;
+    --color-box-bg:#6FB1BF;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #FFFFFF;
+    --color-box: #40311E;
+    font-size: 60%; /* controle das medidas rem */
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100vh;
+    /*font-family: 'Press Start 2P', cursive;*/
+}
+body{
+   /* font: 500 1.6rem 'Press Start 2P', cursive;*/
+   font: 500 2.6rem 'Fira Sans', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-base);
+    
+}
+#container{
+    width: 90vw;
+    max-width: 700px;
+
+}
+.menu{
+    background: var(--color-box);
+    padding: 2%;
+    
+    font: 500 1.6rem 'Press Start 2P', cursive;
+
+}
+.menu li{
+    display: inline;
+    background-color: var(--color-text-complement);
+    padding: 1%;
+    border-radius: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--color-text-base);
+    
+}
+.profile{
+    display: flex;
+    background: var(--color-box-bg);
+   border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+
+}
+.profile p{
+    width: 50vw;
+    margin-left: 1%;
+}
+.profile a{
+    text-decoration: none;
+    background-color: var(--color-text-complement);
+    padding: 1%;
+    color: var(--color-text-base);
+    font: 500 1.6rem 'Press Start 2P', cursive;
+}
+.profile #sonic-gif{
+    width: 15vw;
+    height: 30vh;
+
+}
+#profile-pic{
+    border-radius: 2%;
+    width: 25vw;
+    height: 45vh;
+
+}
+.title{
+    background: var(--color-box);
+    display: flex;
+    font: 500 1.6rem 'Press Start 2P', cursive;
+}
+.title #title-gif{
+    width: 20vh;
+    height: 20vh;
+    margin: 0;
+}
+.title h2{
+    align-self: center;
+}
+.projects{
+    display: flex;
+    background: var(--color-box-bg);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+}
+.projects p {
+    margin: 1%;
+}
+.projects h4{
+    text-align: center;
+    color: var(--color-background);
+    font: 500 1.6rem 'Press Start 2P', cursive;
+}
+.projects img{
+    width: 10vw;
+    height: 20vh;
+}
+.projects .link-img:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+.languages{
+    display: flex;
+    background: var(--color-box-bg);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+}
+.languages table{
+   margin-left: 25%;
+}
+.languages img{
+    width: 10vw;
+    height: 20vh;
+}
+.formacao{
+    display: flex;
+    background: var(--color-box-bg);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%; 
+}
+.formacao h4{
+    text-align: center;
+    color: var(--color-text-base);
+    font: 500 1.6rem 'Press Start 2P', cursive;
+}
+.formacao img{
+    width: 10vw;
+    height: 20vh;
+}
+@media(max-width: 700px){
+    :root{
+        font-size: 50.5%;
+    }
+    .profile{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #profile-pic{
+        border-radius: 2%;
+        width: 98vw;
+        height: 40vh;
+    }
+    .profile p{
+        width: 100vw;
+        padding: 3%;
+        line-height: 110%;
+    }
+    .profile p a{
+        display: block;
+        width: 30vw;
+    }
+    .profile #sonic-gif{
+        width: 98vw;
+        height: 30vh;
+    }
+    .projects img{
+        width: 30vw;
+        height: 10vh;
+    }
+    .languages{
+        display: block;
+    }
+    .languages table{
+        margin-left: 15%;
+    }
+    .languages img{
+        width: 15vw;
+        height: 15vh;
+    }
+    .menu li{
+        display: block;
+    }
+    .formacao img{
+        width: 20vw;
+        height: 15vh;
+    }
+}
