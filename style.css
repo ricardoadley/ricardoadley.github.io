@@ -1,9 +1,8 @@
 :root {
     --color-background:#383240;
-    --color-box-bg:#6FB1BF;
-    --color-text-complement: #9C98A6;
+    --color-text-complement: #000000;
     --color-text-base: #FFFFFF;
-    --color-box: #40311E;
+    --color-background-profile:#191970;
     font-size: 60%; /* controle das medidas rem */
 }
 *{
@@ -28,169 +27,521 @@ body{
     max-width: 700px;
 
 }
-.menu{
-    background: var(--color-box);
-    padding: 2%;
+.profile-menu{
+    position: absolute;
+    width: 100%;
+    height: 473px;
+    left: 0px;
+    top: 0px;
     
-    font: 500 1.6rem 'Press Start 2P', cursive;
+    background-color: var(--color-background-profile);
+    mix-blend-mode: normal;
+    box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.25);
 
 }
-.menu li{
-    display: inline;
-    background-color: var(--color-text-complement);
-    padding: 1%;
-    border-radius: 30px;
-}
-.menu a{
+
+.profile-menu a{
     text-decoration: none;
     color: var(--color-text-base);
+    font-size: 5vh;
     
 }
-.profile{
-    display: flex;
-    background: var(--color-box-bg);
-   border-radius: 5px;
-    padding: 2%;
-    margin: 2%;
 
-}
-.profile p{
-    width: 50vw;
-    margin-left: 1%;
-}
-.profile a{
-    text-decoration: none;
-    background-color: var(--color-text-complement);
-    padding: 1%;
+.profile-menu #link-proje{
+    position: absolute;
+    width: 13vw;
+    height: 10vh;
+    left: 15vw;
+    top: 60vh;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    
     color: var(--color-text-base);
-    font: 500 1.6rem 'Press Start 2P', cursive;
 }
-.profile #sonic-gif{
+.profile-menu #link-linguagens{
+    position: absolute;
     width: 15vw;
-    height: 30vh;
+    height: 10vh;
+    left: 40vw;
+    top: 60vh;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    
+    color:  var(--color-text-base);
+    
+    
+}
+.profile-menu #link-artigos{
+    position: absolute;
+    width: 13vw;
+    height: 10vh;
+    left: 65vw;
+    top: 62vh;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    
+    color:  var(--color-text-base);
+}
+.profile-menu h1{
+    position: absolute;
+    width: 60%;
+    height: 6vh;
+    left: 30%;
+    top: 15vh;
 
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13vh;
+
+    color:  var(--color-text-base);
+}
+
+.profile-menu p{
+    position: absolute;
+    width: 50%;
+    height: 5vh;
+    left: 31%;
+    margin-top: 30vh;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vh;
+    color:  var(--color-text-base);
 }
 #profile-pic{
-    border-radius: 2%;
-    width: 25vw;
-    height: 45vh;
+    position: absolute;
+    width: 15vw;
+    border-radius: 50%;
+    height: 30vh;
+    left: 10%;
+    top: 20%;
 
 }
-.title{
-    background: var(--color-box);
-    display: flex;
-    font: 500 1.6rem 'Press Start 2P', cursive;
-}
-.title #title-gif{
-    width: 20vh;
-    height: 20vh;
-    margin: 0;
-}
-.title h2{
-    align-self: center;
-}
-.projects{
-    display: flex;
-    background: var(--color-box-bg);
-    border-radius: 5px;
-    padding: 2%;
-    margin: 2%;
-}
-.projects p {
-    margin: 1%;
-}
-.projects h4{
+.projects-and-repo h3{
+    position: absolute;
+    margin-left: 12%;
+    margin-right: 3%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
     text-align: center;
-    color: var(--color-background);
-    font: 500 1.6rem 'Press Start 2P', cursive;
+    margin-top: -13%;
+    color: var(--color-text-complement);
+
+
 }
-.projects img{
-    width: 10vw;
-    height: 20vh;
-}
-.projects .link-img:hover{
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-}
-.languages{
-    display: flex;
-    background: var(--color-box-bg);
-    border-radius: 5px;
-    padding: 2%;
-    margin: 2%;
-}
-.languages table{
-   margin-left: 25%;
-}
-.languages img{
-    width: 10vw;
-    height: 20vh;
-}
-.formacao{
-    display: flex;
-    background: var(--color-box-bg);
-    border-radius: 5px;
-    padding: 2%;
-    margin: 2%; 
-}
-.formacao h4{
+.projects-and-repo  p{
+    position: absolute;
+    margin-left: 12%;
+    margin-right: 3%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vh;
     text-align: center;
-    color: var(--color-text-base);
-    font: 500 1.6rem 'Press Start 2P', cursive;
+    margin-top: -5%;
+    color: var(--color-text-complement);
+
+
 }
-.formacao img{
+.projects-and-repo  img{
+    margin-top: 1%;
+    width: 10vw;
+    height: 25vh;
+
+}
+.projects-and-repo{
+    align-content: center;
+}
+.projects-and-repo h2{
+    position: absolute;
+    height: 5vh;
+    left: 10vw;
+    top: 80vh;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6vh;
+
+color:  var(--color-text-base);
+}
+
+.projects-and-repo li{
+    margin-bottom: 20%;
+}
+
+.projects-and-repo #inclu-dig{
+    position: absolute;
+    width: 80%;
+    height: 32%;
+    margin-left: 10%;
+    top: 90vh;
+    
+    background-color:  var(--color-text-base);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.projects-and-repo #tdah{
+
+    position: absolute;
+    width: 80%;
+    height: 32%;
+    margin-left: 10%;
+    top: 130vh;
+    background-color:  var(--color-text-base);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.projects-and-repo #content-text h3{
+        margin-left: 30%;
+}
+.projects-and-repo #content-text p{
+    margin-top: -7%;
+}
+.projects-and-repo #leda #content-text h3{
+    margin-left: 45%;
+}
+.projects-and-repo #leda #content-text p{
+    margin-top: -9%;
+}
+
+.projects-and-repo #leda{
+
+    position: absolute;
+    width: 80%;
+    height: 32%;
+    margin-left: 10%;
+    top: 170vh;
+
+    background-color:  var(--color-text-base);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.skills{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 55%;
+}
+.skills h2{
+    position: absolute;
+    width: 40%; 
+    left: 10%;
+    top: 210vh;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6vh;
+
+    color:  var(--color-text-base);
+}
+
+.skills li{
+    list-style: none;
+    text-align: center;
+}
+.skills img{
+    padding: 1%;
+    background-color:  var(--color-text-base);
     width: 10vw;
     height: 20vh;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 1%;
+   
+}
+.publicacoes h2{
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-top: 2%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6vh;
+}
+.publicacoes #artigo{
+    background-color:  var(--color-text-base);
+    width: 80%;
+    height: 32%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background:  var(--color-text-base);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.publicacoes #artigo img{
+    margin-top: 1%;
+    width: 10vw;
+    height: 25vh;
+    margin-left: 2%;
+}
+.publicacoes #artigo p{
+    position: absolute;
+    margin-left: 12%;
+    margin-right: 3%;
+    font-size: 4vh;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -10%;
+    color: var(--color-text-complement);
+    width: 65%;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    left: 0px;
+
+    background: var(--color-background-profile);
+    mix-blend-mode: normal;
+}
+.footer img{
+    width: 6vw;
+    height: 7vh;
+}
+.footer ul{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.footer li{
+    display: inline;
+    padding: 4%;
 }
 @media(max-width: 700px){
     :root{
         font-size: 50.5%;
     }
-    .profile{
+    .profile-menu{
         display: block;
         margin: 0;
         padding: 0;
     }
-    #profile-pic{
-        border-radius: 2%;
-        width: 98vw;
-        height: 40vh;
+    .profile-menu #profile-pic{
+        border-radius: 50%;
+        width: 25vw;
+        height: 15vh;
+        left: 2%;
     }
-    .profile p{
-        width: 100vw;
-        padding: 3%;
-        line-height: 110%;
+    .profile-menu h1{
+        position: absolute;
+        width: 60%;
+        height: 2vh;
+        left: 30%;
+        top: 15vh;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5vh;
     }
-    .profile p a{
-        display: block;
-        width: 30vw;
+    .profile-menu p{
+        position: absolute;
+        width: 50%;
+        height: 5vh;
+        left: 31%;
+        margin-top: 30vh;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2vh;
     }
-    .profile #sonic-gif{
-        width: 98vw;
-        height: 30vh;
+    .profile-menu a{
+        font-size: 2vh;
+        
     }
-    .projects img{
-        width: 30vw;
+    
+    .profile-menu #link-proje{
+        position: absolute;
+        width: 13vw;
         height: 10vh;
+        left: 15vw;
+        top: 50vh;
+        
     }
-    .languages{
-        display: block;
-    }
-    .languages table{
-        margin-left: 15%;
-    }
-    .languages img{
+    .profile-menu #link-linguagens{
+        position: absolute;
         width: 15vw;
+        height: 10vh;
+        left: 40vw;
+        top: 50vh;
+        
+        
+    }
+    .profile-menu #link-artigos{
+        position: absolute;
+        width: 13vw;
+        height: 10vh;
+        left: 65vw;
+        top: 52vh;
+        
+    }
+    .projects-and-repo #inclu-dig{
+        position: absolute;
+        width: 80%;
+        height: 22vh;
+        margin-left: 10%;
+        top: 65vh;
+    }
+    .projects-and-repo h2{
+        position: absolute;
+        height: 5vh;
+        left: 10vw;
+        top: 60vh;
+        font-size: 3vh;
+    }
+    .projects-and-repo  img{
+        margin-top: 1%;
+        width: 10vw;
         height: 15vh;
+    
     }
-    .menu li{
-        display: block;
+    .projects-and-repo h3{
+        position: absolute;
+        margin-left: 12%;
+        margin-right: 3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: -30%;
+    
+    
     }
-    .formacao img{
-        width: 20vw;
-        height: 15vh;
+    .projects-and-repo  p{
+        position: absolute;
+        margin-left: 12%;
+        margin-right: 3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vh;
+        text-align: center;
+        margin-top: -5%;
+    
+    
     }
+    .projects-and-repo #tdah{
+
+        position: absolute;
+        width: 80%;
+        height: 22vh;
+        margin-left: 10%;
+        top: 90vh;
+
+    }
+    .projects-and-repo #content-text h3{
+        margin-left: 10vw;
+    }
+    .projects-and-repo #content-text p{
+        margin-top: -15%;
+    }
+    .projects-and-repo #leda #content-text h3{
+        margin-left: 30vw;
+    }
+    .projects-and-repo #leda #content-text p{
+        margin-top: -20%;
+    }
+
+    .projects-and-repo #leda{
+
+        position: absolute;
+        width: 80%;
+        height: 22vh;
+        margin-left: 10%;
+        top: 115vh;
+
+    }
+    .skills{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 120vh;
+    }
+    .skills h2{
+        position: absolute;
+        width: 40%; 
+        left: 10%;
+        top: 140vh;
+        font-size: 3vh;
+    }
+    
+    .skills li{
+        list-style: none;
+        text-align: center;
+    }
+    .skills img{
+        padding: 1%;
+        width: 15vw;
+        height: 10vh;
+        margin-left: 2%;
+        margin-top: 1%;
+    }    
+    .publicacoes h2{
+        margin-bottom: 3%;
+        margin-left: 10%;
+        margin-top: 2%;
+    
+        font-size: 3vh;
+    }
+    .publicacoes #artigo{
+        width: 80%;
+        height: 18vh;
+        margin-left: 10%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+
+    }
+    .publicacoes #artigo img{
+        margin-top: 5%;
+        width: 10vw;
+        height: 12vh;
+        margin-left: 2%;
+    }
+    .publicacoes #artigo p{
+        position: absolute;
+        margin-left: 12%;
+        margin-right: 3%;
+        font-size: 1.5vh;
+        margin-top: -25%;
+        width: 65%;
+    }
+    .footer{
+        width: 100%;
+        height: 20vh;
+        left: 0px;
+    }
+    .footer img{
+        width: 8vw;
+        height: 7vh;
+    }
+    .footer ul{
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .footer li{
+        display: inline;
+        padding: 4%;
+    }
+
 }
